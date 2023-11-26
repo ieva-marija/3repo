@@ -20,6 +20,7 @@ class StudentasRanka {
 
     public:
         StudentasRanka() : egzaminas(0), vidurkis(0), mediana(0), rezultatasv(0), rezultatasm(0) {}
+        ~StudentasRanka();
 
     std::string& getVardas()  {
         return vardas;
@@ -92,6 +93,7 @@ class Studentas {
         this->rezultatasv = galutinisVidVector();
         this->rezultatasm = galutinisMedVector();
 }
+        ~Studentas();
     const std::string& getVardas() const {
         return vardas;
     }
@@ -164,6 +166,7 @@ class Studentas2 {
         this->rezultatasv = galutinisVidList();
         this->rezultatasm = galutinisMedList();
 }
+        ~Studentas2();
     const std::string& getVardas() const {
         return vardas;
     }
