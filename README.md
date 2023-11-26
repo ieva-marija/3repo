@@ -11,11 +11,11 @@ Vartotojui yra pateikiamas pasirinkimas - surašyti duomenis rankiniu būdu arba
 Matome, kad naudojant 'class' programos veikimo laikas buvo nežymiai ilgesnis nei naudojant 'struct'. 
   
 6) Eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: O1, O2, O3. Naudojome vector tipą ir 100000 bei 1000000 apimties duomenis.
-   1. o1: ![o1flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/fa571401-c6f9-4070-b036-fbaef67b632e) exe failo dydis:
-   2. o2: ![o2flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/7a89654a-d3c7-487d-8b41-e99c4baba118) exe failo dydis:
-   3. o3: ![o3flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/1f198b17-4b5b-461e-8aa8-ca4c31510f3d) exe failo dydis: 
+   1. o1: ![o1flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/fa571401-c6f9-4070-b036-fbaef67b632e) exe failo dydis: 3,06MB ir 2,17MB, 30,7MB ir 21,7MB
+   2. o2: ![o2flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/7a89654a-d3c7-487d-8b41-e99c4baba118) exe failo dydis: 3,06MB ir 2,17MB, 30,7MB ir 21,7MB
+   3. o3: ![o3flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/1f198b17-4b5b-461e-8aa8-ca4c31510f3d) exe failo dydis: 3,06MB ir 2,17MB, 30,7MB ir 21,7MB
    
-  o2 flag'as iš testuotų, buvo lėčiausias, o3 ir o1 buvo spartesni, o3 nežymiai spartesnis už o1. 
+  o2 flag'as iš testuotų, buvo lėčiausias, o3 ir o1 buvo spartesni, o3 nežymiai spartesnis už o1. exe failų dydžiai visų vienodi. 
 
 
 
