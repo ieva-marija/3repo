@@ -8,12 +8,13 @@ Vartotojui yra pateikiamas pasirinkimas - surašyti duomenis rankiniu būdu arba
    1. Kai programoje naudojome 'struct', vektoriaus tipą ir 100000 bei 1000000 apimties duomenis, programos laikas: ![3strategijoskonsole](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/4cfc8f73-b203-40d3-879d-6cfa00d01dbb)
    2. Kai programoje naudojome 'class', vektoriaus tipą ir 100000 bei 1000000 apimties duomenis, programos laikas: ![class](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/76f978de-e100-4541-a2a9-7a0d125f749a)
   
-
+Matome, kad naudojant 'class' programos veikimo laikas buvo nežymiai ilgesnis nei naudojant 'struct'. 
   
 6) Eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: O1, O2, O3. Naudojome vector tipą ir 100000 bei 1000000 apimties duomenis.
-   1. o1: ![o1flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/fa571401-c6f9-4070-b036-fbaef67b632e)
-   2. o2: ![o2flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/7a89654a-d3c7-487d-8b41-e99c4baba118)
-   3. o3: ![o3flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/1f198b17-4b5b-461e-8aa8-ca4c31510f3d)
+   1. o1: ![o1flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/fa571401-c6f9-4070-b036-fbaef67b632e) exe failo dydis:
+   2. o2: ![o2flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/7a89654a-d3c7-487d-8b41-e99c4baba118) exe failo dydis:
+   3. o3: ![o3flagas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/1f198b17-4b5b-461e-8aa8-ca4c31510f3d) exe failo dydis: 
+   
   o2 flag'as iš testuotų, buvo lėčiausias, o3 ir o1 buvo spartesni, o3 nežymiai spartesnis už o1. 
 
 
