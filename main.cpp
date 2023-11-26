@@ -102,9 +102,9 @@ int main()
         {
             testavimasv("s_1000.txt", 1000, "kietiakai_1000.txt", "vargsiukai_1000.txt");
             testavimasv("s_10000.txt", 10000, "kietiakai_10000.txt", "vargsiukai_10000.txt");
-            //testavimasv("s_100000.txt", 100000, "kietiakai_100000.txt", "vargsiukai_100000.txt");
-            //testavimasv("s_1000000.txt", 1000000, "kietiakai_1000000.txt", "vargsiukai_1000000.txt");
-            //testavimasv("s_10000000.txt", 10000000, "kietiakai_10000000.txt", "vargsiukai_10000000.txt");
+            testavimasv("s_100000.txt", 100000, "kietiakai_100000.txt", "vargsiukai_100000.txt");
+            testavimasv("s_1000000.txt", 1000000, "kietiakai_1000000.txt", "vargsiukai_1000000.txt");
+            testavimasv("s_10000000.txt", 10000000, "kietiakai_10000000.txt", "vargsiukai_10000000.txt");
         }
         else
         {
