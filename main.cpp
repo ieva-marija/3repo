@@ -42,10 +42,8 @@ int main()
         }
     cout << left << setw(15) << "Adresas" << setw(15) << "Vardas" << setw(15) << "Pavarde" << setw(15) << "Galutinis (Vid.) " << setw(15) << "Galutinis (Med.)" << endl;
     cout << "-----------------------------------------------------------------------------------------" << endl;
-
-    for (StudentasRanka& rstudentas : rstudentai) {
-        cout << setw(15) << &rstudentas << " " << setw(15) << rstudentas.getVardas() << " " << setw(15) << rstudentas.getPavarde()
-             << fixed << setprecision(2) << setw(16) << rstudentas.getRezultatasV() << " " << fixed << setprecision(2) << setw(15) << rstudentas.getRezultatasM() << endl;
+        for (StudentasRanka& rstudentas : rstudentai) {
+            cout << rstudentas;
     }
     }
     else if(pasirinkimas3 == 'F' || pasirinkimas3 == 'f')
