@@ -171,6 +171,8 @@ class Studentas {
           }
    
        ~Studentas(){std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";};
+       friend std::ostream& operator<<(std::ostream& os, StudentasRanka& student);
+       friend std::istream& operator>>(std::istream& is, StudentasRanka& student);
 
 private:
     float galutinisVidVector() const {return 0; };
