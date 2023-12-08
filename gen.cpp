@@ -9,8 +9,6 @@
 
 using namespace std;
 
-Studentas::~Studentas(){}
-
 void generavimasVector(vector<Studentas>& studentai, int count, const string& failas)
 {
     studentai.clear();
