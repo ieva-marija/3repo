@@ -5,7 +5,8 @@ Vartotojui yra pateikiamas pasirinkimas - surašyti duomenis rankiniu būdu arba
 3) Programa optimizuota naudojantis 3 strategija - ši strategija yra sparčiausia. Šioje strategijoje rūšiavimo principas yra kaip ir 2-oje strategijoje: vargšiukai išskirstomi į naują vektorių, o kietiakai pasilieka studentų vektoriuje.
 4) Gauti duomenys yra saugomi atitinkamose class'ėse. Įvesti ranka duomenys klasėje StudentasRanka, vector tipo duomenys - Studentas, list - Studentas2.
 5) Kiekvienoje iš šių klasių matome destruktorių, kopijavimo konstruktorių, kopijavimo priskirties operatorių. Kiekvieną sykį, kai yra iškviesti šie metodai - konsolėje matome atitinkamai frazes: Iskviestas destruktorius <studento vardas pavarde>, kopijavimo konstruktorius iskviestas <studento vardas pavarde>, kopijavimo priskirties operatorius iskviestas <studento vardas pavarde>.
-6) Rankiniu būdu įvedus duomenis: ![naujas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/a8514c0a-d407-4c57-aaa4-3575c7644f13)
+6) Rankiniu būdu įvedus duomenis:
+    ![naujas](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/a8514c0a-d407-4c57-aaa4-3575c7644f13)
 7) Pasirinkus nuskaityti duomenis iš failo:
    a) pirmieji duomenys:![sdsa](https://github.com/ieva-marija/Ieva-MarijaDM2-1.2/assets/144428382/229996b9-3033-409d-834e-922c6d7208f3)
 
