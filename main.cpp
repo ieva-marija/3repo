@@ -5,8 +5,6 @@
 
 using namespace std;
 
-StudentasRanka::~StudentasRanka(){}
-
 int main()
 {
     vector <Studentas> studentai;
