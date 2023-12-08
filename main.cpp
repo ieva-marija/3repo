@@ -36,14 +36,16 @@ int main()
     }
         for (int i = 0; i < studentu_sk; i++) {
             cout << "Iveskite duomenis apie studenta:" << endl;
-            rstudentai.push_back(ivesk());
+            StudentasRanka temp;
+            cin >> temp;
+            rstudentai.push_back(temp);
         }
     cout << left << setw(15) << "Adresas" << setw(15) << "Vardas" << setw(15) << "Pavarde" << setw(15) << "Galutinis (Vid.) " << setw(15) << "Galutinis (Med.)" << endl;
     cout << "-----------------------------------------------------------------------------------------" << endl;
 
     for (StudentasRanka& rstudentas : rstudentai) {
-            cout << setw(15) << &rstudentas << " " << setw(15) << rstudentas.getVardas() << setw(15) << rstudentas.getPavarde()
-                 << fixed << setprecision(2) << setw(16) << rstudentas.getRezultatasV() << " " << fixed << setprecision(2) << setw(15) << rstudentas.getRezultatasM() << endl;
+        cout << setw(15) << &rstudentas << " " << setw(15) << rstudentas.getVardas() << " " << setw(15) << rstudentas.getPavarde()
+             << fixed << setprecision(2) << setw(16) << rstudentas.getRezultatasV() << " " << fixed << setprecision(2) << setw(15) << rstudentas.getRezultatasM() << endl;
     }
     }
     else if(pasirinkimas3 == 'F' || pasirinkimas3 == 'f')
