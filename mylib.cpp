@@ -10,76 +10,6 @@
 
 using namespace std;
 
-StudentasRanka ivesk()
-{
-  StudentasRanka temp;
-  cout << "Iveskite varda: ";
-  cin >> temp.getVardas();
-  cout << "Iveskite pavarde: ";
-  cin >> temp.getPavarde();
-
-  int pazymys;
-  int pasirinkimas2;
-  cout << "Ar norite, kad programa studento pazymius ir egzamino rezultata generuotu atsitiktinai?" << endl;
-  cout << "5 - taip, noriu, aciu" << endl;
-  cout << "9 - ne, noriu ivesti savarankiskai" << endl;
-    cin >> pasirinkimas2;
-
-    if (pasirinkimas2 == 5) {
-        srand(time(0));
-        int a_pazymiai_sk = rand() % 11;
-        cout << "Sugeneruoti atsitiktinai pazymiai: ";
-        for (int i = 0; i < a_pazymiai_sk; ++i) {
-            int a_pazymys = rand() % 11 + 1;
-            temp.getPazymiai().push_back(a_pazymys);
-            cout << a_pazymys << " ";
-        }
-
-        srand(time(0));
-        temp.setEgzaminas(rand() % 11 + 1);
-        cout << "Sugeneruotas egzamino pazymys: "<< temp.getEgzaminas() << endl;
-        cout << "\n";
-    }
-     else if (pasirinkimas2 == 9) {
-       while (true) {
-            cout << "Iveskite namu darbu rezultatus (iveskite -1, kai suvedete visus norimus pazymius): ";
-            if (cin >> pazymys) {
-                if (pazymys == -1) {
-                    cin.clear();
-                    cin.ignore(256, '\n');
-                    break;
-                }
-                if (pazymys >= 0 && pazymys <= 10) {
-                    temp.getPazymiai().push_back(pazymys);
-                }
-                else {
-                    cout << "??????????" << endl;
-                    }
-            }
-            else {
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                cout << "????????????" << endl;
-                }
-       }
-       cout << "Iveskite egzamino pazymi: ";
-       int egzaminas;
-        cin >> egzaminas;
-        temp.setEgzaminas(egzaminas);
-        while (temp.getEgzaminas() > 10) {
-            cout << "MELAGIS. VESK IS NAUJO";
-            cin >> egzaminas;
-            temp.setEgzaminas(egzaminas);
-        }
-     }
-     else {
-        cout << "nu cia nei 5, nei 9........" << endl;
-        return temp;
-     }
-     temp.setRezultatasV(galutinisVidVectorRanka(temp));
-     temp.setRezultatasM(galutinisMedVectorRanka(temp));
-  return temp;
-};
 //-------------------------------------------------------
 float galutinisVidVector(const Studentas& studentas) {
     float vidurkis = 0;
@@ -159,5 +89,86 @@ float galutinisMedVectorRanka(StudentasRanka& studentas) {
         return 0.4 * mediana + 0.6 * studentas.getEgzaminas();
         }
 };
+//----------------------------------------------------------
+std::ostream& operator<<(std::ostream& os, StudentasRanka& student) {
+    os << "Vardas: " << student.getVardas() << "\n";
+    os << "Pavarde: " << student.getPavarde() << "\n";
+    os << "Pazymiai: ";
+    for (const int& pazymys : student.getPazymiai()) {
+        os << pazymys << " ";
+    }
+    os << "\nEgzaminas: " << student.getEgzaminas() << "\n";
+    os << "Vidurkis: " << student.getRezultatasV() << "\n";
+    os << "Mediana: " << student.getRezultatasM() << "\n";
+    return os;
+}
+//--------------------------------------------------------------
+std::istream& operator>>(std::istream& is, StudentasRanka& student) {
+    std::cout << "Iveskite varda: ";
+    is >> student.vardas;
+    std::cout << "Iveskite pavarde: ";
+    is >> student.pavarde;
+    int pazymys;
+    int pasirinkimas2;
+    std::cout << "Ar norite, kad programa studento pazymius ir egzamino rezultata generuotu atsitiktinai?" << endl;
+      cout << "5 - taip, noriu, aciu" << endl;
+      cout << "9 - ne, noriu ivesti savarankiskai" << endl;
+        cin >> pasirinkimas2;
+
+        if (pasirinkimas2 == 5) {
+            srand(time(0));
+            int a_pazymiai_sk = rand() % 11;
+            cout << "Sugeneruoti atsitiktinai pazymiai: ";
+            for (int i = 0; i < a_pazymiai_sk; ++i) {
+                int a_pazymys = rand() % 11 + 1;
+                student.getPazymiai().push_back(a_pazymys);
+                cout << a_pazymys << " ";
+            }
+
+            srand(time(0));
+            student.setEgzaminas(rand() % 11 + 1);
+            cout << "Sugeneruotas egzamino pazymys: "<< student.getEgzaminas() << endl;
+            cout << "\n";
+        }
+         else if (pasirinkimas2 == 9) {
+           while (true) {
+                cout << "Iveskite namu darbu rezultatus (iveskite -1, kai suvedete visus norimus pazymius): ";
+                if (cin >> pazymys) {
+                    if (pazymys == -1) {
+                        cin.clear();
+                        cin.ignore(256, '\n');
+                        break;
+                    }
+                    if (pazymys >= 0 && pazymys <= 10) {
+                        student.getPazymiai().push_back(pazymys);
+                    }
+                    else {
+                        cout << "??????????" << endl;
+                        }
+                }
+                else {
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                    cout << "????????????" << endl;
+                    }
+           }
+           cout << "Iveskite egzamino pazymi: ";
+           int egzaminas;
+            cin >> egzaminas;
+            student.setEgzaminas(egzaminas);
+            while (student.getEgzaminas() > 10) {
+                cout << "MELAGIS. VESK IS NAUJO";
+                cin >> egzaminas;
+                student.setEgzaminas(egzaminas);
+            }
+         }
+         else {
+            cout << "nu cia nei 5, nei 9........" << endl;
+            return is;
+         }
+    student.setRezultatasV(galutinisVidVectorRanka(student));
+    student.setRezultatasM(galutinisMedVectorRanka(student));
+    return is;
+}
 
 
