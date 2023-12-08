@@ -91,15 +91,9 @@ float galutinisMedVectorRanka(StudentasRanka& studentas) {
 };
 //----------------------------------------------------------
 std::ostream& operator<<(std::ostream& os, StudentasRanka& student) {
-    os << "Vardas: " << student.getVardas() << "\n";
-    os << "Pavarde: " << student.getPavarde() << "\n";
-    os << "Pazymiai: ";
-    for (const int& pazymys : student.getPazymiai()) {
-        os << pazymys << " ";
-    }
-    os << "\nEgzaminas: " << student.getEgzaminas() << "\n";
-    os << "Vidurkis: " << student.getRezultatasV() << "\n";
-    os << "Mediana: " << student.getRezultatasM() << "\n";
+    os << setw(15) << &student << " " << setw(15) << student.getVardas() << setw(15) << student.getPavarde()
+       << fixed << setprecision(2) << setw(16) << student.getRezultatasV()
+       << " " << fixed << setprecision(2) << setw(15) << student.getRezultatasM() << endl;
     return os;
 }
 //--------------------------------------------------------------
