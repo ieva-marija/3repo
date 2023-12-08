@@ -9,8 +9,6 @@
 
 using namespace std;
 
-Studentas2::~Studentas2(){}
-
 void generavimasList(list<Studentas2>& studentai2, int count, const string& failas)
 {
     studentai2.clear();
