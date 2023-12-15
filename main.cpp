@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    Zmogus zmogus; //demonstruoju, kad neveikia, užkomentavus šią eilutę, programa veiks kaip įprastai.
     vector <Studentas> studentai;
     vector<StudentasRanka> rstudentai;
     list <Studentas2> studentai2;
