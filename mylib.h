@@ -11,6 +11,14 @@ using std::string;
 using std::vector;
 using std::list;
 
+class Zmogus {
+public:
+    virtual ~Zmogus() = default;
+
+    virtual std::string getVardas() const = 0;
+    virtual std::string getPavarde() const = 0;
+};
+
 class StudentasRanka {
    private:
     std::string vardas, pavarde;
