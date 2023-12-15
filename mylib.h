@@ -94,7 +94,9 @@ class StudentasRanka {
               this->rezultatasm = rezultatasm;
           }
    
-      ~StudentasRanka(){std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";};
+    ~StudentasRanka(){
+                        std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";
+                        pazymiai.clear();};
        friend std::ostream& operator<<(std::ostream& os, StudentasRanka& student);
        friend std::istream& operator>>(std::istream& is, StudentasRanka& student);
 
@@ -182,7 +184,9 @@ class Studentas : public Zmogus {
         this->rezultatasm = rezultatasm;
     }
 
-    ~Studentas(){std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";};
+    ~Studentas(){
+                    std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";
+                    pazymiai.clear(); };
 
 private:
     float galutinisVidVector() const {return 0; };
@@ -266,7 +270,9 @@ class Studentas2 : public Zmogus {
         this->rezultatasm = rezultatasm;
     }
 
-    ~Studentas2(){std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";};
+    ~Studentas2(){
+                    std::cout<<"Iskviestas destruktorius " << vardas << " " << pavarde << "\n";
+                    pazymiai.clear();};
 
 
 private:
