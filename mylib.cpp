@@ -138,6 +138,30 @@ void rusiavimasList(list<Studentas2>& studentai2) {
         return a.getPavarde() < b.getPavarde();
     });
 };
+//----------------------------------------------------------
+void rusiavimasVector2(vector<Studentas>& studentai) {
+    std::sort(studentai.begin(), studentai.end(), [](const Studentas& a, const Studentas& b) {
+        return a.getVardas() > b.getVardas();
+    });
+};
+//----------------------------------------------------------
+void rusiavimasList2(list<Studentas2>& studentai2) {
+    studentai2.sort([](const Studentas2& a, const Studentas2& b) {
+        return a.getVardas() < b.getVardas();
+    });
+};
+//----------------------------------------------------------
+void rusiavimasVector3(vector<Studentas>& studentai) {
+    std::sort(studentai.begin(), studentai.end(), [](const Studentas& a, const Studentas& b) {
+        return a.getRezultatasV() < b.getRezultatasV();
+    });
+};
+//----------------------------------------------------------
+void rusiavimasList3(list<Studentas2>& studentai2) {
+    studentai2.sort([](const Studentas2& a, const Studentas2& b) {
+        return a.getRezultatasV() < b.getRezultatasV();
+    });
+};
 //-------------------------------------------------------
 float galutinisVidVectorRanka(StudentasRanka& studentas) {
     float vidurkis = 0;
@@ -159,5 +183,3 @@ float galutinisMedVectorRanka(StudentasRanka& studentas) {
         return 0.4 * mediana + 0.6 * studentas.getEgzaminas();
         }
 };
-
-
