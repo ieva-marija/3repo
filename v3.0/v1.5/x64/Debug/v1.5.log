@@ -1,0 +1,24 @@
+﻿  gen.cpp
+  genlist.cpp
+  main.cpp
+  mylib.cpp
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(29,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(38,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(90,27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(99,27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(106,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(108,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(111,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(122,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(127,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(172,27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(178,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(180,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(183,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(207,23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\mylib.cpp(216,23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  test.cpp
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\test.cpp(47,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Vartotojas\Documents\MyTestProject\v1.5\v1.5\test.cpp(99,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  v1.5.vcxproj -> C:\Users\Vartotojas\Documents\MyTestProject\v3.0\v1.5\x64\Debug\v1.5.exe
