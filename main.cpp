@@ -125,5 +125,6 @@ int main()
             }
         }
     }
+    std::system("timeout /nobreak /t 30 > nul"); //reikalingas, kad konsole is karto neuzsivertu
     return 0;
 }
